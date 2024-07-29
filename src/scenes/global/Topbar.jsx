@@ -26,12 +26,23 @@ const Topbar = () => {
       >
         <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
         <IconButton>
-            <SearchIcon />
+          <SearchIcon />
         </IconButton>
       </Box>
 
       {/* ICONS */}
-      
+      <IconButton onClick={colorMode.toggleColorMode}>
+        <LightModeOutlinedIcon />
+      </IconButton>
+      <IconButton>
+        <NotificationsOutlinedIcon />
+      </IconButton>
+      <IconButton>
+        <SettingOutlinedIcon />
+      </IconButton>
+      <IconButton>
+        <PersonOutlinedIcon />
+      </IconButton>
     </Box>
   );
 };
